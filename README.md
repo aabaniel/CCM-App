@@ -88,7 +88,7 @@ See `docs/ARCHITECTURE.md` before changing cross-feature contracts.
 
 ## Collaborators
 - name 1
-- name 2
+- @aabaniel
 - name 3
 - name 4
 - Nier
