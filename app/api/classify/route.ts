@@ -33,7 +33,7 @@ export async function POST(request: Request) {
       name: "task_classification",
       schema,
       instructions:
-        "Classify one activity into exactly one TimeBudget category. Health includes sleep/exercise/nutrition. Relationships includes family/friends/romantic connection. Identity includes hobbies and personally meaningful creative pursuits. Challenge/Interest includes school, work, deliberate practice and skill-building. Maintenance includes commute, hygiene, chores, errands and life admin. Free is intentional unstructured leisure. Return only the requested schema.",
+        "Classify one activity into exactly one 1440 category. Health includes sleep/exercise/nutrition. Relationships includes family/friends/romantic connection. Identity includes hobbies and personally meaningful creative pursuits. Challenge/Interest includes school, work, deliberate practice and skill-building. Maintenance includes commute, hygiene, chores, errands and life admin. Free is intentional unstructured leisure. Return only the requested schema.",
       input: { task_name: taskName },
     });
     if (!isCategory(result.category) || typeof result.confidence !== "number") throw new Error("Invalid classifier output.");

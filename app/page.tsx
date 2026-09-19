@@ -1,5 +1,5 @@
-import { TimeBudgetApp } from "@/components/time-budget-app";
+import { 1440App } from "@/components/time-budget-app";
 
 export default function HomePage() {
-  return <TimeBudgetApp />;
+  return <1440App />;
 }

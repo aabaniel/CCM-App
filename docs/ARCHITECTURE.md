@@ -2,7 +2,7 @@
 
 ## Product boundary
 
-TimeBudget Web is a mobile-first Next.js application for intentional daily time allocation. A user's day is a 1,440-minute budget. The user plans tomorrow, executes today, and compares actual time with personally chosen daily targets.
+1440 Web is a mobile-first Next.js application for intentional daily time allocation. A user's day is a 1,440-minute budget. The user plans tomorrow, executes today, and compares actual time with personally chosen daily targets.
 
 ## Runtime architecture
 
@@ -10,7 +10,7 @@ TimeBudget Web is a mobile-first Next.js application for intentional daily time 
 
 React client components render the Today, Tomorrow, History, and Progress experiences.
 
-Browser `localStorage` is the MVP source of truth. This is intentional for a zero-account Vercel demo. The state key is versioned (`timebudget.web.v1`).
+Browser `localStorage` is the MVP source of truth. This is intentional for a zero-account Vercel demo. The state key is versioned (`1440.web.v1`).
 
 ### Deterministic domain layer
 

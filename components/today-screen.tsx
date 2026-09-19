@@ -8,9 +8,9 @@ import { allocationRecommendations } from "@/lib/domain/recommendations";
 import { actualEndOverrunMinutes, actualMinutesByCategory } from "@/lib/domain/scoring";
 import { levelForXP } from "@/lib/domain/xp";
 import type { DayPlan } from "@/lib/domain/types";
-import type { useTimeBudgetStore } from "@/lib/storage/store";
+import type { use1440Store } from "@/lib/storage/store";
 
-type Store = ReturnType<typeof useTimeBudgetStore>;
+type Store = ReturnType<typeof use1440Store>;
 
 function NewDayReview({ plan, totalXP }: { plan: DayPlan; totalXP: number }) {
   const recommendations = allocationRecommendations(plan.targets, actualMinutesByCategory(plan.activities));
@@ -72,12 +72,12 @@ export function TodayScreen({ store }: { store: Store }) {
 
     for (const activity of plan.activities.filter((item) => item.status === "planned" || item.status === "active")) {
       if (activity.status === "planned") {
-        scheduleAlert(activity.plannedStartMinutes, `Time for ${activity.title}`, "Open TimeBudget and tap Start.");
+        scheduleAlert(activity.plannedStartMinutes, `Time for ${activity.title}`, "Open 1440 and tap Start.");
       }
       scheduleAlert(
         activity.plannedEndMinutes,
         `${activity.title} is scheduled to end`,
-        "Tap Done when you finish so TimeBudget can record any extra time.",
+        "Tap Done when you finish so 1440 can record any extra time.",
       );
     }
     setNotice(scheduled ? `${scheduled} start/end demo alert${scheduled === 1 ? "" : "s"} scheduled while this page remains open.` : "There are no remaining alerts to schedule today.");

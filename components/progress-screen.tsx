@@ -1,7 +1,7 @@
 import { levelForXP } from "@/lib/domain/xp";
-import type { useTimeBudgetStore } from "@/lib/storage/store";
+import type { use1440Store } from "@/lib/storage/store";
 
-type Store = ReturnType<typeof useTimeBudgetStore>;
+type Store = ReturnType<typeof use1440Store>;
 
 export function ProgressScreen({ store }: { store: Store }) {
   const progress = store.state.progress;

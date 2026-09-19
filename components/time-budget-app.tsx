@@ -6,7 +6,7 @@ import { OnboardingScreen } from "./onboarding-screen";
 import { ProgressScreen } from "./progress-screen";
 import { TodayScreen } from "./today-screen";
 import { TomorrowScreen } from "./tomorrow-screen";
-import { useTimeBudgetStore } from "@/lib/storage/store";
+import { use1440Store } from "@/lib/storage/store";
 
 export type Tab = "today" | "tomorrow" | "history" | "progress";
 
@@ -17,8 +17,8 @@ const tabs: Array<{ id: Tab; label: string; icon: string }> = [
   { id: "progress", label: "Progress", icon: "◆" },
 ];
 
-export function TimeBudgetApp() {
-  const store = useTimeBudgetStore();
+export function 1440App() {
+  const store = use1440Store();
   const [tab, setTab] = useState<Tab>("today");
 
   if (!store.loaded) {
@@ -38,7 +38,7 @@ export function TimeBudgetApp() {
       <section className="app-frame">
         <header className="topbar">
           <div>
-            <div className="brand-row"><span className="brand-mark">1440</span><span className="brand-name">TimeBudget</span></div>
+            <div className="brand-row"><span className="brand-mark">1440</span><span className="brand-name">1440</span></div>
             <p className="tagline">You focus on the life that you want to build.</p>
           </div>
           <button className="ghost-button compact" onClick={store.loadDemo}>Demo data</button>

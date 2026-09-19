@@ -25,7 +25,7 @@ export function OnboardingScreen({
   return (
     <main className="site-shell center-shell">
       <section className="onboarding-card">
-        <span className="eyebrow">TIMEBUDGET</span>
+        <span className="eyebrow">1440</span>
         <h1>Give every hour a purpose.</h1>
         <p className="lede">Set the daily allocation you want your life to reflect. Your score measures how closely your actual day matches these personal goals.</p>
 

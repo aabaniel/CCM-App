@@ -1,8 +1,8 @@
 # Scoring Research Note
 
-The TimeBudget score is a product-specific congruence score inspired by occupational-science work on life balance and congruence between desired and actual activity patterns.
+The 1440 score is a product-specific congruence score inspired by occupational-science work on life balance and congruence between desired and actual activity patterns.
 
-The app must not claim that its 0–100 score is the validated Life Balance Inventory (LBI) score. TimeBudget uses four consumer-facing scored domains—Health, Relationships, Identity, and Challenge / Interest—and compares user-defined target minutes with planned or actual minutes.
+The app must not claim that its 0–100 score is the validated Life Balance Inventory (LBI) score. 1440 uses four consumer-facing scored domains—Health, Relationships, Identity, and Challenge / Interest—and compares user-defined target minutes with planned or actual minutes.
 
 Product formula:
 

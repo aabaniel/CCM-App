@@ -1,4 +1,4 @@
-# Product Specification — TimeBudget
+# Product Specification — 1440
 
 ## Audience
 
@@ -6,7 +6,7 @@ Collegiate students who want to balance academics, internships, health, relation
 
 ## Core concept
 
-A day is a budget of 1,440 minutes. TimeBudget is closer to a budgeting app for time than a conventional backlog/to-do manager.
+A day is a budget of 1,440 minutes. 1440 is closer to a budgeting app for time than a conventional backlog/to-do manager.
 
 The core loop is:
 

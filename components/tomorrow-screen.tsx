@@ -10,9 +10,9 @@ import { plannedMinutesByCategory, scoreAllocation } from "@/lib/domain/scoring"
 import { unallocatedRanges } from "@/lib/domain/schedule";
 import { validateOptimizationResponse } from "@/lib/domain/optimizer";
 import type { CategoryTargets, OptimizationRequest, OptimizationResponse } from "@/lib/domain/types";
-import type { useTimeBudgetStore } from "@/lib/storage/store";
+import type { use1440Store } from "@/lib/storage/store";
 
-type Store = ReturnType<typeof useTimeBudgetStore>;
+type Store = ReturnType<typeof use1440Store>;
 
 export function TomorrowScreen({ store }: { store: Store }) {
   const date = offsetDateKey(1);

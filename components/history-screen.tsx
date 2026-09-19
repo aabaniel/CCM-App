@@ -2,9 +2,9 @@ import { categoryMeta, scoredCategories } from "@/lib/domain/categories";
 import { actualActivityMinutes, actualMinutesByCategory } from "@/lib/domain/scoring";
 import { dateLabel, formatDuration } from "@/lib/domain/dates";
 import { DayTimeline } from "./day-timeline";
-import type { useTimeBudgetStore } from "@/lib/storage/store";
+import type { use1440Store } from "@/lib/storage/store";
 
-type Store = ReturnType<typeof useTimeBudgetStore>;
+type Store = ReturnType<typeof use1440Store>;
 
 export function HistoryScreen({ store }: { store: Store }) {
   const plans = [...store.state.plans].filter((plan) => plan.state === "finalized").sort((a, b) => b.date.localeCompare(a.date));

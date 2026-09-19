@@ -1,6 +1,6 @@
-# TimeBudget Web
+# 1440 Web
 
-A Vercel-ready Next.js conversion of the TimeBudget iOS starter.
+A Vercel-ready Next.js conversion of the 1440 iOS starter.
 
 **Product thesis:** You have a daily budget of 1,440 minutes. Plan tomorrow, execute today, and compare the day you actually lived with the balance you intended to build.
 

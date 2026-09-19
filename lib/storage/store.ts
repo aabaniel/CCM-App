@@ -8,7 +8,7 @@ import { awardXP } from "../domain/xp";
 import type { Activity, AppState, CategoryTargets, DayPlan, OptimizationResponse } from "../domain/types";
 import { demoState } from "../demo/seed";
 
-const STORAGE_KEY = "timebudget.web.v1";
+const STORAGE_KEY = "1440.web.v1";
 
 function emptyState(): AppState {
   return {
@@ -31,7 +31,7 @@ function safeRead(): AppState {
   }
 }
 
-export function useTimeBudgetStore() {
+export function use1440Store() {
   const [state, setState] = useState<AppState>(() => emptyState());
   const [loaded, setLoaded] = useState(false);
 

@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "TimeBudget — Build the life you want",
+  title: "1440 — Build the life you want",
   description: "Budget your 1,440 minutes. Plan tomorrow, execute today, and reflect on the life you actually lived.",
 };
 
